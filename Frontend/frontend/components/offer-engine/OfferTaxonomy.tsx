@@ -77,7 +77,7 @@ export default function OfferTaxonomy({
         </div>
       </div>
 
-      <div className={styles.selectorGroup}>
+      {/* <div className={styles.selectorGroup}>
         <div className={styles.selectorLabel}>Sub Category</div>
         <div className={styles.blockGrid}>
           {currentSubDrivers.map((sub) => (
@@ -92,7 +92,7 @@ export default function OfferTaxonomy({
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
       <div className={styles.selectorGroup}>
         <div className={styles.selectorLabel}>Risk Level</div>

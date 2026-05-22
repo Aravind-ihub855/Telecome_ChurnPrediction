@@ -64,7 +64,7 @@ def register(user: UserCreate):
 def login(user: UserLogin):
     # Verify user
     db_user = get_user_by_email(user.email)
-    if not db_user or not verify_password(user.password, db_user["password_hash"]):
+    if not db_user or not verify_password(user.password, db_user.get("password_hash")):
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Incorrect email or password",

@@ -87,7 +87,7 @@ export default function SubscriberTable({ onViewDetail }: Props) {
               <option value="No">CHURN: NO</option>
             </select>
 
-            <select 
+            {/* <select 
               className="h-10 px-4 rounded-xl bg-white border border-slate-200 text-[11px] font-black uppercase tracking-widest text-slate-500 focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 outline-none transition-all cursor-pointer"
               value={genderFilter}
               onChange={(e) => { setGenderFilter(e.target.value); setPage(1); }}
@@ -95,7 +95,7 @@ export default function SubscriberTable({ onViewDetail }: Props) {
               <option value="">GENDER: ALL</option>
               <option value="Male">MALE</option>
               <option value="Female">FEMALE</option>
-            </select>
+            </select> */}
 
             <div className="relative flex-1 max-w-[400px]">
                <input
